@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-matiasbidarte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbidarte/portfolio-matiasbidarte.git"
+  },
+  "author": "Matias Bidarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattbidarte/portfolio-matiasbidarte/issues"
+  },
+  "homepage": "https://github.com/mattbidarte/portfolio-matiasbidarte#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

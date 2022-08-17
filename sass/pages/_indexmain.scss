@@ -1,9 +1,9 @@
 .hero {
+    position:relative;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexcenter(none, center, center);
+    
 
     &__bg {
         background: url(../assets/img/back-hero.jpg);
@@ -23,9 +23,13 @@
         height: 200px;
         width: 200px;
         border-radius: 50%;
-        margin-right: 40px;
+        margin: 40px;
     }
-    &__description span, h1{
-        @include font (#fff, 500, 3em)
+
+    &__description-span{
+        @include font(#fff, 400, 3em);
+    }
+    &__description-title {
+        @include font(#fff, 700, 3em);
     }
 }

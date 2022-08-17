@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -68,9 +69,11 @@ ul {
     background-color: #fff; }
 
 .hero {
+  position: relative;
   min-height: 100vh;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center; }
   .hero__bg {
@@ -89,10 +92,14 @@ ul {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    margin-right: 40px; }
-  .hero__description span, .hero h1 {
+    margin: 40px; }
+  .hero__description-span {
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 3em; }
+  .hero__description-title {
+    color: #fff;
+    font-weight: 700;
     font-size: 3em; }
 
 @media screen and (max-width: 815px) {
@@ -121,3 +128,11 @@ ul {
       font-weight: 500; }
     .header__content-navbar.active {
       left: 0; } }
+
+@media screen and (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+    text-align: center; }
+    .hero__description-span, .hero__description-title {
+      font-size: 2.5em;
+      margin: 0 10px; } }

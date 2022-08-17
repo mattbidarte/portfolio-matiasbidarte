@@ -36,3 +36,16 @@
         }
     }
 }
+
+@media screen and (max-width: 650px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        
+        &__description-span,
+        &__description-title {
+            font-size: 2.5em;
+            margin: 0 10px;
+        }
+    }
+}

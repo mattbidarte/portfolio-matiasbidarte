@@ -1,5 +1,56 @@
 .header {
-    background-color: black;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    height: 2vh;
+    width: 100%;
+    z-index: 5;
+    padding: 30px 20px;
+
+    &__content{
+        @include flexcenter (none, space-between, center);   
+
+        &-logo {
+            @include font (#fff, none, 2.5em);
+        }
+
+        &-navbar{
+            @include flexcenter(none, center, center);
+
+            &-item{
+                @include font (#fff, 100, 1.5em);
+                margin: 0 20px;
+
+                &:hover {
+                    font-weight: 500;
+                    border-bottom: 1px #fff solid;
+                }
+
+                &:active {
+                    transform: scale(0.9px);
+                }
+            }
+        }
+    }
+}
+
+// MENU HAMBURGUESA
+.hamburger {
+    display: none;
+    cursor: pointer;
+
+    &__bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        border-radius: 3px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+    }
 }
 
 

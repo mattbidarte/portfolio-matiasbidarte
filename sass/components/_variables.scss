@@ -11,3 +11,15 @@
     font-weight: $weight;
     font-size: $size;    
 }
+
+// Animación arrowup
+@keyframes aparece1 {
+    0% {
+        right: -100;
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

@@ -2,9 +2,11 @@
 @import "./components/variables";
 @import "./components/global";
 @import "./components/header";
+@import "./components/arrowup";
 
 // Pages
-@import "./pages/indexmain.scss";
+@import "./pages/home.scss";
+@import "./pages/sobremi";
 
 // Mediaquieries
 @import "./components/mediaquerie";

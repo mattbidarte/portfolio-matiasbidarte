@@ -20,6 +20,10 @@ ul {
     list-style: none;
 }
 
+section[id] {
+    scroll-margin-top: 80px;
+}
+
 .max-width {
     width: 100%;
     max-width: 80vw;

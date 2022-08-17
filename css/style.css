@@ -1,3 +1,10 @@
+@keyframes aparece1 {
+  0% {
+    right: -100;
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +22,9 @@ a {
 ul {
   list-style: none; }
 
+section[id] {
+  scroll-margin-top: 80px; }
+
 .max-width {
   width: 100%;
   max-width: 80vw;
@@ -23,7 +33,7 @@ ul {
 .header {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   height: 2vh;
@@ -68,6 +78,15 @@ ul {
     transition: all 0.3s ease-in-out;
     background-color: #fff; }
 
+.arrowup a {
+  color: #333333;
+  position: fixed;
+  font-size: 4em;
+  bottom: 20px;
+  right: 20px;
+  animation: aparece1 1s ease-in;
+  z-index: 1; }
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -101,6 +120,70 @@ ul {
     color: #fff;
     font-weight: 700;
     font-size: 3em; }
+
+.sobremi {
+  width: 100%;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: center; }
+  .sobremi__about h2,
+  .sobremi__about p {
+    color: #000;
+    font-weight: none;
+    font-size: 2em;
+    margin-bottom: 15px; }
+  .sobremi__about h2 {
+    font-size: 2.5em; }
+  .sobremi__about-cv {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #007FFF;
+    margin-top: 20px; }
+  .sobremi__skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px; }
+    .sobremi__skills-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #e6e6e6;
+      width: 120px;
+      height: 120px;
+      border-radius: 20%;
+      transition: all 0.2s ease-in-out; }
+      .sobremi__skills-item img {
+        width: 80px; }
+      .sobremi__skills-item--title {
+        color: #000;
+        font-weight: 400;
+        font-size: 1.5em; }
+      .sobremi__skills-item:hover {
+        transform: translateY(-10px); }
+
+@media screen and (max-width: 1015px) {
+  .sobremi {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center; }
+    .sobremi__about {
+      text-align: center; }
+      .sobremi__about-cv {
+        margin: 20px auto;
+        margin-bottom: 50px; } }
 
 @media screen and (max-width: 815px) {
   .hamburger {
@@ -136,3 +219,7 @@ ul {
     .hero__description-span, .hero__description-title {
       font-size: 2.5em;
       margin: 0 10px; } }
+
+@media screen and (max-width: 470px) {
+  .sobremi__skills {
+    grid-template-columns: repeat(2, 1fr); } }

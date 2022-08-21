@@ -120,10 +120,15 @@ section[id] {
     color: #fff;
     font-weight: 700;
     font-size: 3em; }
+  .hero__wave {
+    position: absolute;
+    width: 100%;
+    bottom: -10%;
+    box-sizing: border-box; }
 
 .sobremi {
   width: 100%;
-  margin: 50px 0;
+  margin: 100px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
@@ -141,6 +146,7 @@ section[id] {
     flex-direction: none;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     width: 170px;
     height: 50px;
     color: #fff;
@@ -148,7 +154,12 @@ section[id] {
     font-size: 1.5em;
     text-align: center;
     background-color: #007FFF;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out; }
+    .sobremi__about-cv:hover {
+      background-color: transparent;
+      color: #000;
+      border: 1px #000 solid; }
   .sobremi__skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -167,7 +178,7 @@ section[id] {
       transition: all 0.2s ease-in-out; }
       .sobremi__skills-item img {
         width: 80px; }
-      .sobremi__skills-item--title {
+      .sobremi__skills-item-title {
         color: #000;
         font-weight: 400;
         font-size: 1.5em; }

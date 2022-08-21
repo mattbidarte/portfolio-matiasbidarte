@@ -14,7 +14,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fbf9f3; }
 
 a {
   text-decoration: none; }
@@ -55,7 +56,7 @@ section[id] {
       justify-content: center;
       align-items: center; }
       .header__content-navbar-item {
-        color: #fff;
+        color: #fbf8f3;
         font-weight: 100;
         font-size: 1.5em;
         margin: 0 20px; }
@@ -113,34 +114,47 @@ section[id] {
     border-radius: 50%;
     margin: 40px; }
   .hero__description-span {
-    color: #fff;
+    color: #fbf8f3;
     font-weight: 400;
     font-size: 3em; }
   .hero__description-title {
-    color: #fff;
+    color: #fbf8f3;
     font-weight: 700;
     font-size: 3em; }
-  .hero__wave {
-    position: absolute;
-    width: 100%;
-    bottom: -10%;
-    box-sizing: border-box; }
+
+.custom-shape-divider-bottom-1661083123 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg); }
+
+.custom-shape-divider-bottom-1661083123 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 46px; }
+
+.custom-shape-divider-bottom-1661083123 .shape-fill {
+  fill: #FBF8F3; }
 
 .sobremi {
   width: 100%;
-  margin: 100px 0;
+  margin: 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
   justify-content: center; }
   .sobremi__about h2,
   .sobremi__about p {
-    color: #000;
+    color: #232323;
     font-weight: none;
     font-size: 2em;
     margin-bottom: 15px; }
   .sobremi__about h2 {
-    font-size: 2.5em; }
+    font-size: 3.5em; }
   .sobremi__about-cv {
     display: flex;
     flex-direction: none;
@@ -153,13 +167,13 @@ section[id] {
     font-weight: 500;
     font-size: 1.5em;
     text-align: center;
-    background-color: #007FFF;
+    background-color: #232323;
     margin-top: 20px;
     transition: all 0.3s ease-in-out; }
     .sobremi__about-cv:hover {
       background-color: transparent;
-      color: #000;
-      border: 1px #000 solid; }
+      color: #232323;
+      border: 1px #232323 solid; }
   .sobremi__skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -179,7 +193,7 @@ section[id] {
       .sobremi__skills-item img {
         width: 80px; }
       .sobremi__skills-item-title {
-        color: #000;
+        color: #232323;
         font-weight: 400;
         font-size: 1.5em; }
       .sobremi__skills-item:hover {

@@ -20,7 +20,7 @@
             @include flexcenter(none, center, center);
 
             &-item{
-                @include font (#fff, 100, 1.5em);
+                @include font (#fbf8f3, 100, 1.5em);
                 margin: 0 20px;
 
                 &:hover {

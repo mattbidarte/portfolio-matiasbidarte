@@ -11,6 +11,12 @@
             }
         }
     }
+    .proyectos__about{
+        text-align: center;
+    }
+    .proyectos__grid{
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (max-width: 815px){
     // MENU HAMBURGUESA

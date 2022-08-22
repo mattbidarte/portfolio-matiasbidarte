@@ -1,3 +1,7 @@
+// VARIABLES
+$negro: #232323;
+$blanco: #fbf8f3;
+
 // MIXINs
 @mixin flexcenter ($direction, $justify, $align){
     display: flex;
@@ -12,6 +16,7 @@
     font-size: $size;    
 }
 
+// KEYFRAMES    
 // Animación arrowup
 @keyframes aparece1 {
     0% {
@@ -21,5 +26,15 @@
 
     100% {
         opacity: 100%;
+    }
+}
+
+// Animacion para hero
+@keyframes parpadeo {
+    90% {
+        z-index: -2;
+    }
+    100% {
+        z-index: 6;
     }
 }

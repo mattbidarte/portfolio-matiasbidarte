@@ -5,6 +5,12 @@
   100% {
     opacity: 100%; } }
 
+@keyframes parpadeo {
+  90% {
+    z-index: -2; }
+  100% {
+    z-index: 6; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -91,7 +97,7 @@ section[id] {
 .hero {
   position: relative;
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: none;
   justify-content: center;
@@ -113,10 +119,18 @@ section[id] {
     width: 200px;
     border-radius: 50%;
     margin: 40px; }
-  .hero__description-span {
+  .hero__description-span, .hero__description-span2 {
     color: #fbf8f3;
     font-weight: 400;
     font-size: 3em; }
+  .hero__description-span2::after {
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 2px;
+    background-color: #fbf8f3;
+    margin-left: 2px;
+    animation: parpadeo 1s infinite; }
   .hero__description-title {
     color: #fbf8f3;
     font-weight: 700;
@@ -138,7 +152,7 @@ section[id] {
   height: 46px; }
 
 .custom-shape-divider-bottom-1661083123 .shape-fill {
-  fill: #FBF8F3; }
+  fill: #fbf8f3; }
 
 .sobremi {
   width: 100%;
@@ -147,8 +161,7 @@ section[id] {
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
   justify-content: center; }
-  .sobremi__about h2,
-  .sobremi__about p {
+  .sobremi__about h2, .sobremi__about p {
     color: #232323;
     font-weight: none;
     font-size: 2em;
@@ -185,7 +198,7 @@ section[id] {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      background-color: #e6e6e6;
+      background-color: #e7e7e7;
       width: 120px;
       height: 120px;
       border-radius: 20%;
@@ -199,6 +212,77 @@ section[id] {
       .sobremi__skills-item:hover {
         transform: translateY(-10px); }
 
+.proyectos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 20px auto; }
+  .proyectos__grid-item {
+    max-width: 400px;
+    max-height: 300px;
+    background: #fbf8f3;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 20px; }
+    .proyectos__grid-item:hover .proyectos__grid-item-description {
+      top: 0;
+      opacity: 1; }
+    .proyectos__grid-item:hover .proyectos__grid-item-img {
+      transform: scale(1.5); }
+    .proyectos__grid-item-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out; }
+    .proyectos__grid-item-description {
+      position: absolute;
+      color: #fbf8f3;
+      font-weight: 500;
+      font-size: 1em;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      top: 300px;
+      opacity: 0;
+      z-index: 1;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out; }
+      .proyectos__grid-item-description h3 {
+        margin-bottom: 20px;
+        font-size: 1.5em; }
+    .proyectos__grid-item-buttons {
+      display: flex;
+      flex-direction: none;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; }
+      .proyectos__grid-item-buttons a {
+        color: #fbf8f3;
+        font-weight: 500;
+        font-size: 1em;
+        background-color: #232323;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out; }
+        .proyectos__grid-item-buttons a:hover {
+          background-color: transparent;
+          border: #fbf8f3 1px solid; }
+      .proyectos__grid-item-buttons i {
+        margin-right: 10px;
+        font-size: 1.1em; }
+
 @media screen and (max-width: 1015px) {
   .sobremi {
     grid-template-columns: 1fr;
@@ -208,7 +292,11 @@ section[id] {
       text-align: center; }
       .sobremi__about-cv {
         margin: 20px auto;
-        margin-bottom: 50px; } }
+        margin-bottom: 50px; }
+  .proyectos__about {
+    text-align: center; }
+  .proyectos__grid {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 815px) {
   .hamburger {

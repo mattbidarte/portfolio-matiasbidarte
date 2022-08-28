@@ -10,6 +10,12 @@ $blanco: #fbf8f3;
     align-items: $align;
 }
 
+@mixin gridcenter {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 @mixin font ($color, $weight, $size){
     color: $color;
     font-weight: $weight;

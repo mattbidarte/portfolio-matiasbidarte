@@ -34,7 +34,7 @@ section[id] {
 
 .max-width {
   width: 100%;
-  max-width: 65vw;
+  max-width: 70vw;
   margin: 0 auto; }
 
 .header {
@@ -212,12 +212,12 @@ section[id] {
       .sobremi__skills-item:hover {
         transform: translateY(-10px); }
   .sobremi__services {
-    margin-top: 100px;
+    margin: 100px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-    row-gap: 50px; }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; }
     .sobremi__services-card {
       background-color: #e7e7e7;
       border-radius: 5%;
@@ -314,7 +314,7 @@ section[id] {
           margin-right: 10px;
           font-size: 1.1em; }
 
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1024px) {
   .sobremi {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -325,7 +325,7 @@ section[id] {
         margin: 20px auto;
         margin-bottom: 50px; }
   .sobremi__services {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(2, 1fr); }
   .proyectos__about {
     text-align: center; }
   .proyectos__grid {
@@ -356,7 +356,9 @@ section[id] {
       font-size: 2.5em;
       font-weight: 500; }
     .header__content-navbar.active {
-      left: 0; } }
+      left: 0; }
+  .sobremi__services-card {
+    width: 100%; } }
 
 @media screen and (max-width: 650px) {
   .hero {
@@ -364,7 +366,9 @@ section[id] {
     text-align: center; }
     .hero__description-span, .hero__description-title {
       font-size: 2.5em;
-      margin: 0 10px; } }
+      margin: 0 10px; }
+  .sobremi__services {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 470px) {
   .sobremi__skills {

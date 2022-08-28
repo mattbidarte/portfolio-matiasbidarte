@@ -83,6 +83,9 @@
     }
     .sobremi__services-grid{
         grid-template-columns: 1fr;
+        &-card{
+            width: 100%;
+        }
     }
 }
 

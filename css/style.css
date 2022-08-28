@@ -219,7 +219,7 @@ section[id] {
     gap: 50px; }
     .sobremi__services-grid-card {
       background-color: #e7e7e7;
-      border-radius: 5%;
+      border-radius: 10px;
       width: 300px;
       height: 200px;
       display: flex;
@@ -374,7 +374,9 @@ section[id] {
       font-size: 2.5em;
       margin: 0 10px; }
   .sobremi__services-grid {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .sobremi__services-grid-card {
+      width: 100%; } }
 
 @media screen and (max-width: 470px) {
   .sobremi__skills {

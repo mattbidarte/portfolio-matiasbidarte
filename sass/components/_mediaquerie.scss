@@ -11,8 +11,14 @@
             }
         }
     }
+
     .sobremi__services{
-        grid-template-columns: repeat(2, 1fr);
+        &-about{
+            text-align: center;
+        }
+        &-grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     .proyectos__about{
         text-align: center;
@@ -77,7 +83,7 @@
             margin: 0 10px;
         }
     }
-    .sobremi__services{
+    .sobremi__services-grid{
         grid-template-columns: 1fr;
     }
 }

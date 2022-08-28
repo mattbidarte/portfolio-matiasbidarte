@@ -67,8 +67,7 @@ section[id] {
         font-size: 1.5em;
         margin: 0 20px; }
         .header__content-navbar-item:hover {
-          font-weight: 500;
-          border-bottom: 1px #fff solid; }
+          color: #284eee; }
         .header__content-navbar-item:active {
           transform: scale(0.9px); }
 
@@ -156,17 +155,17 @@ section[id] {
 
 .sobremi {
   width: 100%;
-  margin: 50px 0;
+  margin: 100px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
   justify-content: center; }
-  .sobremi__about-descripcion, .sobremi__about-titulo, .proyectos__about-titulo, .proyectos__about-descripcion {
+  .sobremi__about-descripcion, .sobremi__about-titulo, .sobremi__services-about-title, .proyectos__about-titulo, .sobremi__services-about-desc, .proyectos__about-descripcion {
     color: #232323;
     font-weight: none;
     font-size: 2em;
     margin-bottom: 15px; }
-  .sobremi__about-titulo, .proyectos__about-titulo {
+  .sobremi__about-titulo, .sobremi__services-about-title, .proyectos__about-titulo {
     font-size: 3.5em; }
   .sobremi__about-cv {
     display: flex;
@@ -184,9 +183,7 @@ section[id] {
     margin-top: 20px;
     transition: all 0.3s ease-in-out; }
     .sobremi__about-cv:hover {
-      background-color: transparent;
-      color: #232323;
-      border: 1px #232323 solid; }
+      background-color: #284eee; }
   .sobremi__skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -211,14 +208,16 @@ section[id] {
         font-size: 1.5em; }
       .sobremi__skills-item:hover {
         transform: translateY(-10px); }
-  .sobremi__services {
-    margin: 100px auto;
+  .sobremi__services-about {
+    margin-top: 120px; }
+  .sobremi__services-grid {
+    margin: 50px auto;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px; }
-    .sobremi__services-card {
+    .sobremi__services-grid-card {
       background-color: #e7e7e7;
       border-radius: 5%;
       width: 300px;
@@ -228,14 +227,18 @@ section[id] {
       justify-content: space-around;
       align-items: center;
       padding: 20px; }
-      .sobremi__services-card-icon {
+      .sobremi__services-grid-card:hover .sobremi__services-grid-card-icon {
+        color: #284eee; }
+      .sobremi__services-grid-card:hover .sobremi__services-grid-card-title {
+        color: #284eee; }
+      .sobremi__services-grid-card-icon {
         font-size: 3em; }
-      .sobremi__services-card-title {
+      .sobremi__services-grid-card-title {
         color: #232323;
         font-weight: 700;
         font-size: 2em;
         text-align: center; }
-      .sobremi__services-card-desc {
+      .sobremi__services-grid-card-desc {
         color: #232323;
         font-weight: 400;
         font-size: 1.5em;
@@ -324,7 +327,9 @@ section[id] {
       .sobremi__about-cv {
         margin: 20px auto;
         margin-bottom: 50px; }
-  .sobremi__services {
+  .sobremi__services-about {
+    text-align: center; }
+  .sobremi__services-grid {
     grid-template-columns: repeat(2, 1fr); }
   .proyectos__about {
     text-align: center; }
@@ -367,7 +372,7 @@ section[id] {
     .hero__description-span, .hero__description-title {
       font-size: 2.5em;
       margin: 0 10px; }
-  .sobremi__services {
+  .sobremi__services-grid {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 470px) {

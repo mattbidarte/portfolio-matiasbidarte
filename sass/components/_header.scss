@@ -22,10 +22,8 @@
             &-item{
                 @include font (#fbf8f3, 100, 1.5em);
                 margin: 0 20px;
-
                 &:hover {
-                    font-weight: 500;
-                    border-bottom: 1px #fff solid;
+                    color: #284eee;
                 }
 
                 &:active {

@@ -94,3 +94,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media screen and (max-width: 425px){
+    .arrowup a{
+        bottom: 80px;
+        animation-delay: 2s;
+    }
+    .botonera{
+        display: flex;
+        animation-delay: 2s;
+    }
+}

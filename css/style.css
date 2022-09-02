@@ -90,8 +90,36 @@ section[id] {
   font-size: 4em;
   bottom: 20px;
   right: 20px;
-  animation: aparece1 1s ease-in;
+  opacity: 0%;
+  animation: aparece1 1s ease;
+  animation-fill-mode: forwards;
   z-index: 1; }
+
+.botonera {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #fbf8f3;
+  height: 60px;
+  width: 100%;
+  z-index: 6;
+  border-top: 1px solid #232323;
+  border-radius: 10px;
+  opacity: 0%;
+  animation: aparece1 1s ease;
+  animation-fill-mode: forwards; }
+  .botonera__item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 2px;
+    background-color: #232323;
+    margin-left: 48px; }
+  .botonera__item-icon {
+    height: 45px; }
 
 .hero {
   position: relative;
@@ -381,3 +409,11 @@ section[id] {
 @media screen and (max-width: 470px) {
   .sobremi__skills {
     grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 425px) {
+  .arrowup a {
+    bottom: 80px;
+    animation-delay: 2s; }
+  .botonera {
+    display: flex;
+    animation-delay: 2s; } }

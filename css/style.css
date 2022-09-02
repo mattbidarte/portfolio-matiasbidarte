@@ -110,16 +110,21 @@ section[id] {
   opacity: 0%;
   animation: aparece1 1s ease;
   animation-fill-mode: forwards; }
-  .botonera__item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 80px;
-    width: 2px;
-    background-color: #232323;
-    margin-left: 48px; }
-  .botonera__item-icon {
-    height: 45px; }
+  .botonera__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid #232323; }
+    .botonera__item-icon {
+      height: 45px; }
+  .botonera__item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
 
 .hero {
   position: relative;

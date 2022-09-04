@@ -2,6 +2,7 @@
 $negro: #232323;
 $blanco: #fbf8f3;
 $azul: #284eee;
+$gris: #e7e7e7;
 
 // MIXINs
 @mixin flexcenter ($direction, $justify, $align){
@@ -24,6 +25,7 @@ $azul: #284eee;
 }
 
 // KEYFRAMES    
+
 // Animación arrowup
 @keyframes aparece1 {
     0% {

@@ -20,10 +20,11 @@
             @include flexcenter(none, center, center);
 
             &-item{
-                @include font (#fbf8f3, 100, 1.5em);
+                @include font ($blanco, 100, 1.5em);
                 margin: 0 20px;
+                transition: all 0.2s ease-in-out;
                 &:hover {
-                    color: #284eee;
+                    color: $azul;
                 }
 
                 &:active {
@@ -34,7 +35,7 @@
     }
 }
 
-// MENU HAMBURGUESA
+// ICON MENU HAMBURGUESA
 .hamburger {
     display: none;
     cursor: pointer;

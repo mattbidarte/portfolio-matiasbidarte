@@ -30,6 +30,27 @@
             height: 250px;
         }
     }
+
+    // CONTACTO
+    .contacto{
+        padding-bottom: 80px;
+    }
+    .contacto__desc{
+        text-align: center;
+    }
+    .contacto__grid{
+        grid-template-columns: 1fr;
+    }
+    .contacto__redes{
+        flex-direction: row;
+        justify-content: center;
+        order: -1;
+        margin-top: 20px;
+        padding: 0;
+        &-item{
+            margin-right: 20px;
+        }
+    }
 }
 @media screen and (max-width: 815px){
     // MENU HAMBURGUESA
@@ -46,45 +67,53 @@
             transform: translateY(-8px) rotate(-45deg)
         }
     }
+
     .header__content-navbar {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        gap: 15px;
-        padding-top: 80px;
-        flex-direction: column;
-        justify-content: flex-start;
         background: rgba(0, 0, 0, 0.7);
         height: 100%;
         width: 100%;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        row-gap: 10px;
+        padding-top: 80px;
+        flex-direction: column;
+        justify-content: flex-start;
         transition: 0.3s;
 
         &-item {
-            font-size: 2.5em;
-            font-weight: 500;
+            @include font($blanco, 500, 3em);
         }
 
         &.active {
             left: 0;
         }
     }
-}
 
-@media screen and (max-width: 650px){
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        
-        &__description-span,
-        &__description-title {
-            font-size: 2.5em;
-            margin: 0 10px;
-        }
-    }
     .sobremi__services-grid{
         grid-template-columns: 1fr;
         &-card{
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .max-width{
+        max-width: 80vw;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        &__description{
+            max-width: 90vw;
+        }
+
+        &__description-span,
+        &__description-span2,
+        &__description-title {
+            font-size: 2.5em;
+            margin: 0 10px;
         }
     }
 }
@@ -103,5 +132,10 @@
     .botonera{
         display: flex;
         animation-delay: 2s;
+    }
+    
+    // CONTACTO
+    .contacto__redes{
+        display: none;
     }
 }

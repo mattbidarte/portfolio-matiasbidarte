@@ -70,7 +70,6 @@
         <main class="main">
             <!-- HERO PRINCIPAL -->
             <section class="hero" id="home">
-
                 <div class="hero__bg"></div>
                 <!-- Aca va la foto de perfil -->
                 <div class="hero__profile"></div>
@@ -85,12 +84,10 @@
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                     </svg>
                 </div>
-
             </section>
 
             <!-- SOBRE MI -->
             <section class="max-width" id="sobremi">
-
                 <div class="sobremi">
                     <div class="sobremi__about">
                         <h2 class="sobremi__about-titulo">Sobre mi</h2>
@@ -174,10 +171,8 @@
             </section>
 
             <!-- PROYECTOS -->
-            <section class="max-width" id="proyectos">
-
+            <section class="proyectosrel max-width" id="proyectos">
                 <div class="proyectos">
-
                     <div class="proyectos__about">
                         <h2 class="proyectos__about-titulo">Proyectos</h2>
                         <p class="proyectos__about-descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores beatae corrupti soluta esse provident fugit accusantium, fuga corporis cum porro dolores repellendus totam voluptas excepturi ratione ad dignissimos! Dolorem.</p>
@@ -212,8 +207,64 @@
                     </div>
                 </div>
             </section>
-        </main>
 
+            <section class="contactosec" id="contacto">
+                <div class="custom-shape-divider-top-1662309801">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+                <div class="contacto max-width">
+                    <div class="contacto__desc">
+                        <h2>Contacto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, optio impedit. Repudiandae rerum quis neque, quia eius deserunt tempore? Harum alias necessitatibus dicta, animi similique dolor vero et deleniti adipisci.</p>
+                    </div>
+                    <div class="contacto__grid">       
+                        <form class="contacto__form" netlify>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                            
+                            <label for="correo">E-mail</label>
+                            <input type="email" name="correo" id="correo" required>
+                            
+                            <label for="consulta">Consulta</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                            
+                            <div class="contacto__buttons">    
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Borrar</button>
+                            </div>
+                        </form>
+                        
+                        <div class="contacto__redes">
+                            <div class="contacto__redes-item">
+                                <a href="mailto:matias.bidarte@outlook.com?Subject=Contacto%20desde%20el%20portfolio%20de%20Matias" target="_blank" rel="noopener noreferrer">
+                                    <img class="contacto__redes-item-icon"src="https://img.icons8.com/material-rounded/344/new-post.png" alt="">
+                                    <p>matias.bidarte@outlook.com</p>
+                                </a>
+                            </div>
+                            <div class="contacto__redes-item">
+                                <a href="https://github.com/mattbidarte" target="_blank" rel="noopener noreferrer"">
+                                    <img class="contacto__redes-item-icon"src="https://img.icons8.com/ios-glyphs/344/github.png" alt="">
+                                    <p>/mattbidarte</p>
+                                </a>
+                            </div>
+                            <div class="contacto__redes-item">
+                                <a href="https://www.linkedin.com/in/matias-bidarte/" target="_blank" rel="noopener noreferrer">
+                                    <img class="contacto__redes-item-icon"src="https://img.icons8.com/ios-filled/344/linkedin.png" alt="">
+                                    <p>/matiasbidarte</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <p>2022 @ Hecho con ♥ por Matias Bidarte</p>
+            </footer>
+            
     </body>
 
 </html>

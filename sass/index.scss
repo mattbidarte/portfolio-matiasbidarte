@@ -4,11 +4,13 @@
 @import "./components/header";
 @import "./components/arrowup";
 @import "./components/botonera";
+@import "./components/footer";
 
 // Pages
 @import "./pages/home.scss";
 @import "./pages/sobremi";
 @import "./pages/proyectos";
+@import "./pages/contacto";
 
 // Mediaquieries
 @import "./components/mediaquerie";

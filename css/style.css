@@ -9,7 +9,7 @@
   90% {
     z-index: -2; }
   100% {
-    z-index: 6; } }
+    z-index: 4; } }
 
 * {
   margin: 0;
@@ -86,7 +86,7 @@ section[id] {
     background-color: #fff; }
 
 .arrowup a {
-  color: #333333;
+  color: #284eee;
   position: fixed;
   font-size: 4em;
   bottom: 20px;
@@ -128,8 +128,9 @@ section[id] {
   font-weight: 400;
   font-size: 1.5em;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 10px; }
+  padding-top: 40px;
+  padding-bottom: 10px;
+  height: 100%; }
 
 .hero {
   position: relative;
@@ -396,9 +397,13 @@ section[id] {
       font-size: 2em;
       padding: 5px;
       border-radius: 5px;
-      border: none; }
+      border: none;
+      outline: none; }
       .contacto__form input:focus, .contacto__form textarea:focus {
         border: 2px #284eee solid; }
+    .contacto__form textarea {
+      resize: none;
+      font-size: 2.4em; }
     .contacto__form button {
       color: #232323;
       font-weight: 400;
@@ -430,6 +435,8 @@ section[id] {
       .contacto__redes-item img {
         filter: invert(95%) sepia(6%) saturate(425%) hue-rotate(47deg) brightness(108%) contrast(97%);
         height: 100px; }
+        .contacto__redes-item img:hover {
+          filter: invert(22%) sepia(57%) saturate(6192%) hue-rotate(230deg) brightness(97%) contrast(92%); }
       .contacto__redes-item p {
         color: #fbf8f3;
         font-weight: 400;
@@ -480,13 +487,15 @@ section[id] {
   .contacto__grid {
     grid-template-columns: 1fr; }
   .contacto__redes {
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     order: -1;
     margin-top: 20px;
     padding: 0; }
     .contacto__redes-item {
-      margin-right: 20px; } }
+      margin-right: 20px; }
+  .footer {
+    padding-top: 0; } }
 
 @media screen and (max-width: 815px) {
   .hamburger {
@@ -534,7 +543,13 @@ section[id] {
 
 @media screen and (max-width: 470px) {
   .sobremi__skills {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .contacto__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; } }
 
 @media screen and (max-width: 425px) {
   .arrowup a {
@@ -543,5 +558,7 @@ section[id] {
   .botonera {
     display: flex;
     animation-delay: 2s; }
+  .footer {
+    padding-bottom: 80px; }
   .contacto__redes {
     display: none; } }

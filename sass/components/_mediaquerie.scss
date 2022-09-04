@@ -42,14 +42,19 @@
         grid-template-columns: 1fr;
     }
     .contacto__redes{
-        flex-direction: row;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         order: -1;
         margin-top: 20px;
         padding: 0;
         &-item{
             margin-right: 20px;
         }
+    }
+
+    // FOOTER
+    .footer{
+        padding-top: 0;
     }
 }
 @media screen and (max-width: 815px){
@@ -122,6 +127,10 @@
     .sobremi__skills{
         grid-template-columns: repeat(2, 1fr);
     }
+    .contacto__buttons{
+        @include flexcenter(column, center, center);
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -132,6 +141,10 @@
     .botonera{
         display: flex;
         animation-delay: 2s;
+    }
+
+    .footer{
+        padding-bottom: 80px;
     }
     
     // CONTACTO
